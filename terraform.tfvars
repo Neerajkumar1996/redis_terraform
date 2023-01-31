@@ -43,5 +43,5 @@ node2_tags = {
   Owner = "Neeraj",
 }
 access_key = "redis"
-key_path   = "/home/ninja-turtle/Downloads/suraj_key.pem"
+key_path   = "/var/lib/jenkins/acess-key"
 

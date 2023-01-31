@@ -81,7 +81,7 @@ module "master" {
   subnet         = module.public_subnet.public_subnet_id
   security_group = module.pb_sg.public_sg_id
   instance_tags  = var.master_tags
-  key_pair_id        = /var/lib/jenkins/workspace/role_terraform/acess-key/acess.key
+  key_id        = /var/lib/jenkins/workspace/role_terraform/acess-key/acess.key
 }
 module "node1" {
   source         = "./modules/instance"
@@ -89,7 +89,7 @@ module "node1" {
   subnet         = module.pvt_subnet1.private_subnet_id
   security_group = module.pvt_sg.private_sg_id
   instance_tags  = var.node1_tags
-  key_pair_id        = /var/lib/jenkins/workspace/role_terraform/acess-key/acess.key
+  key_id        = /var/lib/jenkins/workspace/role_terraform/acess-key/acess.key
 
 }
 module "node2" {
@@ -98,6 +98,6 @@ module "node2" {
   subnet         = module.pvt_subnet2.private_subnet_id
   security_group = module.pvt_sg.private_sg_id
   instance_tags  = var.node2_tags
-  key_pair_id       = /var/lib/jenkins/workspace/role_terraform/acess-key/acess.key
+  key_id       = /var/lib/jenkins/workspace/role_terraform/acess-key/acess.key
 
 }

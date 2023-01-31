@@ -1,3 +1,3 @@
-output "key" {
-  value = aws_key_pair.keypair.id
-}
+# output "key" {
+#   value = aws_key_pair.keypair.id
+# }

@@ -43,5 +43,5 @@ node2_tags = {
   Owner = "Neeraj",
 }
 acess-key = "redis"
-key_path   = "/var/lib/jenkins/acess-key"
+
 

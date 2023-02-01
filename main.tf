@@ -70,11 +70,11 @@ module "pb_sg" {
   vpc_id     = module.vpc.vpc_id
   pb_sg_tags = var.pb_sg_tags
 }
-# module "access_key" {
-#   source   = "./modules/keypair"
-#   key_name = var.access_key
-#   key_path = var.key_path
-# }
+module "access_key" {
+  source   = "./modules/keypair"
+  key_name = var.access_key
+  key_path = var.key_path
+}
 module "master" {
   source         = "./modules/instance"
   ami            = var.ami
